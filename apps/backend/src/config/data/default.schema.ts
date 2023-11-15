@@ -1,11 +1,11 @@
 export const defaultSchema= {
   app: {
     id: {
-      default: 'what-birthday',
+      default: 'monorepo-starter',
       env: 'APP_ID',
     },
     name: {
-      default: 'What Birthday Platform',
+      default: 'Monorepo Starter Platform',
       env: 'APP_NAME',
     },
     shorthand: {
@@ -58,7 +58,7 @@ export const defaultSchema= {
     playground: {
       default: false,
       env: 'GRAPHQL_PLAYGROUND',
-    }
+    },
   },
   rollbar: {
     accessToken: {

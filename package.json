@@ -19,5 +19,7 @@
     "node": ">=20.0.0"
   },
   "dependencies": {},
-  "license": "MIT"
+  "license": "MIT",
+  "author": "Sven Stam",
+  "keywords": ["nestjs", "monorepo", "turborepo", "graphql", "jwt"]
 }

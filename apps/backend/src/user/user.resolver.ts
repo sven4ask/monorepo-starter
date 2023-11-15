@@ -6,15 +6,11 @@ import { JwtAuthGuard } from '../auth/auth-jwt.guard';
 
 @Resolver('User')
 export class UserResolver {
-  constructor(
-    private readonly service: UserService,
-  ) {}
+  constructor(private readonly service: UserService) {}
 
   @Query(returns => UserModel)
   @UseGuards(JwtAuthGuard)
-  async getUser(
-    @Args('id') id: string,
-  ) {
+  async getUser(@Args('id') id: string) {
     const user = await this.service.getById(id);
     if (!user) {
       throw new NotFoundException();
